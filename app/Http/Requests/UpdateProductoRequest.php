@@ -24,9 +24,9 @@ class UpdateProductoRequest extends FormRequest
     public function rules()
     {
         return [
-                "nombre" => "required|string|min:3|max:150",
-                "precio" => "required|numeric|min:0|max:9999",
-                "stock" => "required|numeric|min:0|max:9999",
+                "nombre" => "required|string|min:1|max:150",
+                "precio" => "required|string|min:0|max:9999",
+                "stock" => "required|string|min:0|max:9999",
         ];
     }
 }
